@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-bg-primary: #5B0202;
+  --color-bg-dark: #200E01;
+  --color-bg-mid: #8B0000;
+  --color-text: #EDE7C7;
+  --color-text-muted: #C4B89A;
+  --color-gold: #C9A84C;
+  --color-gold-light: #E8D5A3;
+
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Jost", sans-serif;
+}
+
+/* Base custom defaults */
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Custom scrollbar for ultra luxury feeling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold);
+  opacity: 0.6;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-light);
+}
+
+/* Marquee infinite scroll keyframes */
+@keyframes marquee {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Custom editorial dividers with golds */
+hr {
+  border: 0;
+  height: 1px;
+  background-color: var(--color-gold);
+  opacity: 0.4;
+}
+
+/* Subtle elegant glow effects */
+.gold-glow {
+  box-shadow: 0 0 15px rgba(201, 168, 76, 0.15);
+}
+
+.gold-glow-hover:hover {
+  box-shadow: 0 0 25px rgba(232, 213, 163, 0.3);
+  border-color: var(--color-gold-light);
+}
+
+/* Selection aesthetics */
+::selection {
+  background-color: var(--color-bg-mid);
+  color: var(--color-gold-light);
+}
+

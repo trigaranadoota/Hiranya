@@ -1,0 +1,6 @@
+{
+  "name": "WILDCRAFT",
+  "description": "Luxury fine jewelry inspired by endangered species, with a percentage of every sale directly funding global wildlife conservation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
