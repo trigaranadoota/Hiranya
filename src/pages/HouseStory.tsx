@@ -21,7 +21,7 @@ interface Artisan {
 const artisans: Artisan[] = [
   { id: "jean-louis", name: "Jean-Louis Dupont", role: "Master Goldsmith", years: 28, bio: "Jean-Louis manages our high-jewelry sculpting bench in Geneva. His unique ability to render microscopic, dual-axis hinges in heavy circular gold brings the Pangolin Shield to life.", image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80" },
   { id: "elena", name: "Elena Varghese", role: "Lead Diamond Cutter", years: 19, bio: "Elena executes meticulous marquise cuts with flawless facial orientations. Every White Diamond that leaves her bench mirrors Himalayan glacial starlight.", image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500&auto=format&fit=crop&q=80" },
-  { id: "marcus", name: "Marcus Vance", role: "Casting Director", years: 14, bio: "Overseeing the pure thermal alloy pours of Fairmined fine materials. Marcus guarantees zero slag or mercury leaks exist within Wildcraft inputs.", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=80" }
+  { id: "marcus", name: "Marcus Vance", role: "Casting Director", years: 14, bio: "Overseeing the pure thermal alloy pours of Fairmined fine materials. Marcus guarantees zero slag or mercury leaks exist within HIRANYA inputs.", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=80" }
 ];
 
 export const HouseStory: React.FC = () => {
@@ -41,7 +41,7 @@ export const HouseStory: React.FC = () => {
     <div className="pt-24 min-h-screen bg-[var(--color-bg-primary)]">
       <SEO
         title={activeTab === "story" ? "OUR LEGACY STORY" : "THE MAISON CRAFTSPEOPLE"}
-        description="Discover the history of WILDCRAFT, from inception to supporting species preservation. Learn about the Geneva artisans sculpting our collections."
+        description="Discover the history of HIRANYA, from inception to supporting species preservation. Learn about the Geneva artisans sculpting our collections."
       />
 
       {/* Hero */}
@@ -107,7 +107,7 @@ export const HouseStory: React.FC = () => {
                 </h2>
                 <div className="font-sans text-xs md:text-sm text-[var(--color-text-muted)] leading-[1.8] space-y-4 font-light">
                   <p>
-                    Established under the cold wind of Geneva, Swiss Alps, WILDCRAFT was born from a singular conviction: that absolute visual luxury should not exist in isolation from the biosphere. We observed high-end jewelry honoring abstract models, while the natural architectures that inspire them faced continuous trespass and extinction.
+                    Established under the cold wind of Geneva, Swiss Alps, HIRANYA was born from a singular conviction: that absolute visual luxury should not exist in isolation from the biosphere. We observed high-end jewelry honoring abstract models, while the natural architectures that inspire them faced continuous trespass and extinction.
                   </p>
                   <p>
                     By allocating a sovereign 10% pledge of our total commissions directly to certified wildlife field operations, we turn fine accessories into critical, long-standing defense tokens for endangered wild cat ranges, titan rhino corridors, and pangolin shelters.
@@ -123,7 +123,7 @@ export const HouseStory: React.FC = () => {
                   \"We do not simple forge crowns; we build financial, digital shields to defend the endangered kingdoms of this planet.\"
                 </p>
                 <cite className="font-sans text-[9px] tracking-[0.25em] text-[var(--color-gold)] uppercase font-semibold mt-4 block">
-                  — CHARLES WILDCRAFT, MAISON FOUNDER
+                  — CHARLES HIRANYA, MAISON FOUNDER
                 </cite>
               </div>
             </div>

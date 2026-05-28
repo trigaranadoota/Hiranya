@@ -13,7 +13,7 @@ interface SEOProps {
 export const SEO: React.FC<SEOProps> = ({ title, description }) => {
   useEffect(() => {
     // Set Document Title
-    document.title = `${title} | WILDCRAFT Fine Jewelry`;
+    document.title = `${title} | HIRANYA Fine Jewelry`;
 
     // Manage Description Tag
     let metaDescription = document.querySelector('meta[name="description"]');
@@ -31,7 +31,7 @@ export const SEO: React.FC<SEOProps> = ({ title, description }) => {
       ogTitle.setAttribute("property", "og:title");
       document.head.appendChild(ogTitle);
     }
-    ogTitle.setAttribute("content", `${title} | WILDCRAFT`);
+    ogTitle.setAttribute("content", `${title} | HIRANYA`);
 
     let ogDesc = document.querySelector('meta[property="og:description"]');
     if (!ogDesc) {

@@ -13,23 +13,23 @@ export const Legal: React.FC = () => {
 
   // Determine current legal document structure based on URL path
   let docTitle = "MAISON INTELLECTUAL PROPERTY";
-  let docDesc = "Wildcraft regulatory legal updates and copyright disclosures in Geneva, Switzerland.";
+  let docDesc = "HIRANYA regulatory legal updates and copyright disclosures in Geneva, Switzerland.";
   let docContent = (
     <div className="space-y-6">
       <h2 className="font-serif text-2xl text-white font-light">1. Trademark Disclosures</h2>
       <p>
-        The visual branding, literal names, geometric species illustrations, custom font layouts, and trademarked designations of "WILDCRAFT" stand exclusively protected under Swiss intellectual property registries.
+        The visual branding, literal names, geometric species illustrations, custom font layouts, and trademarked designations of "HIRANYA" stand exclusively protected under Swiss intellectual property registries.
       </p>
       <h2 className="font-serif text-2xl text-white font-light">2. Artistic Reproductions</h2>
       <p>
-        Reproductions of our collections, custom wax sketching, 3D articulation prints, or unique digital models without explicit authorization from Wildcraft directors is strictly penalized by legal limits.
+        Reproductions of our collections, custom wax sketching, 3D articulation prints, or unique digital models without explicit authorization from HIRANYA directors is strictly penalized by legal limits.
       </p>
     </div>
   );
 
   if (pathname.includes("privacy")) {
     docTitle = "PRIVACY POLICY";
-    docDesc = "Audited personal privacy security procedures at Wildcraft high salons.";
+    docDesc = "Audited personal privacy security procedures at HIRANYA high salons.";
     docContent = (
       <div className="space-y-6 text-xs md:text-sm">
         <h2 className="font-serif text-2xl text-white font-light">1. Information We Secure</h2>
@@ -37,11 +37,11 @@ export const Legal: React.FC = () => {
           We secure client ledger details, contact phone structures, shipping coordinates, and transaction histories exclusively to fulfill armored deliveries, coordinate viewing salon appointments, or dispatch certificates of authenticity.
         </p>
         <p>
-          Your financial transactions undergo bank end-to-end hashes and never rest on private Wildcraft databases.
+          Your financial transactions undergo bank end-to-end hashes and never rest on private HIRANYA databases.
         </p>
         <h2 className="font-serif text-2xl text-white font-light">2. Absolute Confidences</h2>
         <p>
-          Wildcraft maintains absolute patron confidentiality. We never lease, vend, or share contact lists or saved credentials with secondary market organizations or unauthorized third-party agencies.
+          HIRANYA maintains absolute patron confidentiality. We never lease, vend, or share contact lists or saved credentials with secondary market organizations or unauthorized third-party agencies.
         </p>
       </div>
     );

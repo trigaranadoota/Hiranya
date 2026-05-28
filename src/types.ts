@@ -46,16 +46,6 @@ export interface Partner {
   impactNote: string;
 }
 
-export interface Article {
-  slug: string;
-  title: string;
-  category: string;
-  author: string;
-  date: string;
-  excerpt: string;
-  content: string;
-  image: string;
-}
 
 export interface CartItem {
   id: string; // unique identification combing color and size

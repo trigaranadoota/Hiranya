@@ -91,7 +91,7 @@ export const ProductDetail: React.FC = () => {
     Craftsmanship: (
       <div className="space-y-4 text-sm leading-[1.8] text-[var(--color-text-muted)] font-light text-left">
         <p>
-          Each Wildcraft artifact is custom sculpted using circular, certified Fairmined raw gold or refined platinum. Our Geneva studio integrates legacy jewelry methods dating back over three centuries.
+          Each HIRANYA artifact is custom sculpted using circular, certified Fairmined raw gold or refined platinum. Our Geneva studio integrates legacy jewelry methods dating back over three centuries.
         </p>
         <ul className="list-disc pl-5 space-y-1 text-xs">
           <li>Individually sketched and hand-carved wax layouts</li>
@@ -106,7 +106,7 @@ export const ProductDetail: React.FC = () => {
           Fine jewelry requires careful, deliberate handling. Avoid contact with abrasive cleaning fluids, salt water, or intense cosmetics.
         </p>
         <p>
-          Clean with an ultra-soft lint-free microfiber cloth and secure in the padded velvet Wildcraft case when in transition. We offer free professional steam-cleaning and annual claw integrity checks at any salon.
+          Clean with an ultra-soft lint-free microfiber cloth and secure in the padded velvet HIRANYA case when in transition. We offer free professional steam-cleaning and annual claw integrity checks at any salon.
         </p>
       </div>
     ),

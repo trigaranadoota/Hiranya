@@ -200,7 +200,7 @@ export const CollectionSpecies: React.FC = () => {
             Align Your Heritage With Absolute Protection
           </h2>
           <p className="font-sans text-xs md:text-sm text-[var(--color-text-muted)] leading-[1.8] max-w-xl mx-auto font-light">
-            Each fine Wildcraft jewelry item of the {currentCollection.name} comes accompanied by a certified Stewardship Ledger. This ledger documents the safe deployment of conservation capital directly triggered by your purchase, registering your lifelong patronage of the {currentCollection.scientificName}'s wild territories.
+            Each fine Hiranya jewelry item of the {currentCollection.name} comes accompanied by a certified Stewardship Ledger. This ledger documents the safe deployment of conservation capital directly triggered by your purchase, registering your lifelong patronage of the {currentCollection.scientificName}'s wild territories.
           </p>
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link

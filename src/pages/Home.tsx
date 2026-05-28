@@ -73,7 +73,7 @@ export const Home: React.FC = () => {
     <div className="pt-20">
       <SEO
         title="WHERE BEAUTY PROTECTS THE WILD"
-        description="Every purchase of WILDCRAFT luxury fine jewelry directly funds global endangered wildlife conservation and habitat restoration patrols."
+        description="Every purchase of HIRANYA luxury fine jewelry directly funds global endangered wildlife conservation and habitat restoration patrols."
       />
 
       {/* SECTION 1: HERO VIEW */}
@@ -122,7 +122,7 @@ export const Home: React.FC = () => {
             <div className="relative group max-w-sm md:max-w-md w-full border border-[var(--color-gold)]/20 p-2">
               <img
                 src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=700&auto=format&fit=crop&q=80"
-                alt="WILDCRAFT Glacial Ring"
+                alt="HIRANYA Glacial Ring"
                 className="w-full h-[32rem] object-cover filter brightness-90 saturate-50 contrast-110 group-hover:brightness-100 transition-all duration-1000"
                 referrerPolicy="no-referrer"
               />
@@ -275,7 +275,7 @@ export const Home: React.FC = () => {
                 Species Advocacy
               </span>
               <p className="font-serif text-sm text-[var(--color-text)] italic mt-1 font-light">
-                Wildcraft guards the remaining habitats of Northern Siberia.
+                Hiranya guards the remaining habitats of Northern Siberia.
               </p>
             </div>
           </div>
@@ -292,7 +292,7 @@ export const Home: React.FC = () => {
               </h2>
 
               <p className="font-sans text-sm md:text-base text-[var(--color-text)] leading-[1.8] font-light">
-                At WILDCRAFT, every gem selection and hammer stroke serves a higher path. We align traditional high-jewelry design with intense landscape stewardship. 10% of every sale is directly transferred to our partner organizations—funding tracking bands, field-ranger stations, and species rehab.
+                At HIRANYA, every gem selection and hammer stroke serves a higher path. We align traditional high-jewelry design with intense landscape stewardship. 10% of every sale is directly transferred to our partner organizations—funding tracking bands, field-ranger stations, and species rehab.
               </p>
 
               <div className="pt-4">
@@ -452,7 +452,7 @@ export const Home: React.FC = () => {
 
             <div className="space-y-4 font-sans text-sm text-[var(--color-text-muted)] leading-[1.8] font-light">
               <p>
-                The Pangolin represents a delicate architecture, structured layer by layer for protection against the elements, yet entirely defenseless against human trespass. Wildcraft honors this marvel with our signature rose gold scales, mimicking their natural plates.
+                The Pangolin represents a delicate architecture, structured layer by layer for protection against the elements, yet entirely defenseless against human trespass. Hiranya honors this marvel with our signature rose gold scales, mimicking their natural plates.
               </p>
               <p>
                 Each cuff requires our master goldsmiths and diamond cutters over 140 meticulous hours of alignment. Through your acquisition, we fund local veterinary intervention checkpoints that heal and return rescued scales to Cambodian forest ranges.
@@ -461,10 +461,10 @@ export const Home: React.FC = () => {
 
             <div className="pt-4">
               <Link
-                to="/journal/art-of-the-pangolin-shield"
+                to="/collections/pangolin"
                 className="font-sans text-xs tracking-[0.2em] text-[var(--color-text)] uppercase group flex items-center hover:text-[var(--color-gold)] transition-colors inline-block pb-0.5 border-b border-[var(--color-gold)]/30"
               >
-                READ THE CRAFT STORY ——
+                DISCOVER THE COLLECTION ——
               </Link>
             </div>
           </div>

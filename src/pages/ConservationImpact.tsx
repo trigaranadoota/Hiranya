@@ -19,7 +19,7 @@ interface Milestone {
 }
 
 const milestones: Milestone[] = [
-  { year: "2023", title: "Maison Founded", location: "Geneva, Switzerland", desc: "Wildcraft launches with a promise: fine jewelry will serve as a digital and financial fortress for our remaining wild kingdoms." },
+  { year: "2023", title: "Maison Founded", location: "Geneva, Switzerland", desc: "HIRANYA launches with a promise: fine jewelry will serve as a digital and financial fortress for our remaining wild kingdoms." },
   { year: "2024", title: "First Radar Drones Placed", location: "Kruger Corridor, South Africa", desc: "Successfully deployed three surveillance drone crafts in joint funding with Rhino Protection Trust, eliminating local perimeter breach hazards." },
   { year: "2025", title: "Himalayan Camera Trap Network", location: "Tajikistan High Ridges", desc: "Installed twenty-four high-definition heat-sensitive camera triggers in coordinates mapped by Panthera tracking shepherds." },
   { year: "2026", title: "180 Pangolins Safe Returned", location: "Cardamom Sanctuary, Cambodia", desc: "Direct financing of Wildlife Alliance emergency rescue clinics restored, rehabilitated, and returned 180 pangolins to deep jungle ranges." }
@@ -87,7 +87,7 @@ export const ConservationImpact: React.FC = () => {
     <div className="pt-24 min-h-screen bg-[var(--color-bg-primary)]">
       <SEO
         title={activeSubView === "impact" ? "OUR STEWARDSHIP IMPACT" : "CONSERVATION PARTNERS"}
-        description="Learn how WILDCRAFT redirects 10% of luxury jewellery sales to field rangers, solar surveillance, and active species habitat restoration."
+        description="Learn how HIRANYA redirects 10% of luxury jewellery sales to field rangers, solar surveillance, and active species habitat restoration."
       />
 
       {/* Sub-page Selector Header */}
@@ -355,7 +355,7 @@ export const ConservationImpact: React.FC = () => {
             </p>
             <div className="pt-4">
               <a
-                href="mailto:stewardship@wildcraftjewelry.com"
+                href="mailto:stewardship@hiranyajewelry.com"
                 id="partner-enquiry-email"
                 className="inline-block border border-[var(--color-gold)] text-[var(--color-text)] font-sans text-xs tracking-[0.2em] uppercase py-3.5 px-8 hover:bg-[var(--color-bg-mid)] transition-colors inline-block"
               >

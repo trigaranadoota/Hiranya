@@ -50,135 +50,137 @@ export const Navigation: React.FC = () => {
         id="main-nav"
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 border-b border-[var(--color-gold)]/20 ${
           isScrolled
-            ? "bg-[var(--color-bg-dark)]/85 backdrop-blur-xl py-4"
-            : "bg-[var(--color-bg-dark)] py-6"
+            ? "bg-[var(--color-bg-dark)]/85 backdrop-blur-xl"
+            : "bg-[var(--color-bg-dark)]"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
-          
-          {/* LEFT: Nav Links (Desktop) */}
-          <div className="hidden lg:flex items-center space-x-8">
-            <div
-              className="relative py-2 group cursor-pointer"
-              onMouseEnter={() => setIsMegaMenuOpen(true)}
-              onMouseLeave={() => setIsMegaMenuOpen(false)}
+        {/* TOP ROW: Brand Name */}
+        <div className={`relative flex items-center justify-center transition-all duration-500 w-full ${isScrolled ? "py-4" : "py-6"}`}>
+          {/* Mobile Menu Hamburger */}
+          <div className="absolute left-6 md:left-12 lg:hidden">
+            <button
+              id="mobile-menu-hamburger"
+              aria-label="Toggle Mobile Menu"
+              className="text-[var(--color-text)] hover:text-[var(--color-gold)] transition-colors"
+              onClick={() => setIsMobileMenuOpen(true)}
             >
-              <Link
-                to="/collections"
-                id="nav-link-collections"
-                className="font-sans text-[0.75rem] tracking-[0.2em] text-[var(--color-text)] uppercase hover:text-[var(--color-gold)] transition-colors duration-300"
-              >
-                Collections
-              </Link>
-              {/* Mega Menu Indicator line on hover */}
-              <div className="absolute bottom-0 left-0 w-0 h-[1px] bg-[var(--color-gold)] transition-all duration-300 group-hover:w-full"></div>
-            </div>
-
-            <Link
-              to="/conservation/impact"
-              id="nav-link-conservation"
-              className="font-sans text-[0.75rem] tracking-[0.2em] text-[var(--color-text)] uppercase hover:text-[var(--color-gold)] transition-colors duration-300 relative py-2 group"
-            >
-              Conservation
-              <div className="absolute bottom-0 left-0 w-0 h-[1px] bg-[var(--color-gold)] transition-all duration-300 group-hover:w-full"></div>
-            </Link>
-
-            <Link
-              to="/bespoke"
-              id="nav-link-bespoke"
-              className="font-sans text-[0.75rem] tracking-[0.2em] text-[var(--color-text)] uppercase hover:text-[var(--color-gold)] transition-colors duration-300 relative py-2 group"
-            >
-              Bespoke
-              <div className="absolute bottom-0 left-0 w-0 h-[1px] bg-[var(--color-gold)] transition-all duration-300 group-hover:w-full"></div>
-            </Link>
-
-            <Link
-              to="/the-house/story"
-              id="nav-link-house"
-              className="font-sans text-[0.75rem] tracking-[0.2em] text-[var(--color-text)] uppercase hover:text-[var(--color-gold)] transition-colors duration-300 relative py-2 group"
-            >
-              The House
-              <div className="absolute bottom-0 left-0 w-0 h-[1px] bg-[var(--color-gold)] transition-all duration-300 group-hover:w-full"></div>
-            </Link>
-
-            <Link
-              to="/journal"
-              id="nav-link-journal"
-              className="font-sans text-[0.75rem] tracking-[0.2em] text-[var(--color-text)] uppercase hover:text-[var(--color-gold)] transition-colors duration-300 relative py-2 group"
-            >
-              Journal
-              <div className="absolute bottom-0 left-0 w-0 h-[1px] bg-[var(--color-gold)] transition-all duration-300 group-hover:w-full"></div>
-            </Link>
+              <Menu size={22} strokeWidth={1.5} />
+            </button>
           </div>
 
-          {/* Hamburger Menu Icon (Mobile) */}
-          <button
-            id="mobile-menu-hamburger"
-            aria-label="Toggle Mobile Menu"
-            className="lg:hidden text-[var(--color-text)] hover:text-[var(--color-gold)] transition-colors"
-            onClick={() => setIsMobileMenuOpen(true)}
-          >
-            <Menu size={22} strokeWidth={1.5} />
-          </button>
-
-          {/* CENTER: Wordmark Logo */}
-          <div className="text-center absolute left-1/2 -translate-x-1/2">
+          {/* Center Logo */}
+          <div className="text-center">
             <Link
               to="/"
               id="brand-wordmark"
               className="font-serif text-2xl md:text-3.5xl tracking-[0.3em] font-light text-[var(--color-text)] uppercase block select-none hover:text-[var(--color-gold-light)] transition-colors duration-500"
             >
-              Wildcraft
+              Hiranya
             </Link>
           </div>
+        </div>
 
-          {/* RIGHT: Quick Icons */}
-          <div className="flex items-center space-x-5 md:space-x-6">
-            <button
-              id="nav-search-btn"
-              aria-label="Open Search"
-              onClick={() => setSearchActive(true)}
-              className="text-[var(--color-text)] hover:text-[var(--color-gold)] transition-colors duration-300"
-            >
-              <Search size={18} strokeWidth={1.5} />
-            </button>
+        {/* BOTTOM ROW: Navigation Links and Icons */}
+        <div
+          className={`w-full overflow-hidden transition-all duration-500 ${
+            isScrolled ? "max-h-0 opacity-0" : "max-h-24 opacity-100 pb-6"
+          }`}
+        >
+          <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
+            {/* LEFT: Nav Links (Desktop) */}
+            <div className="hidden lg:flex items-center space-x-8">
+              <div
+                className="relative py-2 group cursor-pointer"
+                onMouseEnter={() => setIsMegaMenuOpen(true)}
+                onMouseLeave={() => setIsMegaMenuOpen(false)}
+              >
+                <Link
+                  to="/collections"
+                  id="nav-link-collections"
+                  className="font-sans text-[0.75rem] tracking-[0.2em] text-[var(--color-text)] uppercase hover:text-[var(--color-gold)] transition-colors duration-300"
+                >
+                  Collections
+                </Link>
+                {/* Mega Menu Indicator line on hover */}
+                <div className="absolute bottom-0 left-0 w-0 h-[1px] bg-[var(--color-gold)] transition-all duration-300 group-hover:w-full"></div>
+              </div>
 
-            <Link
-              to="/wishlist"
-              id="nav-wishlist-link"
-              aria-label="Wishlist"
-              className="text-[var(--color-text)] hover:text-[var(--color-gold)] transition-colors duration-300 relative"
-            >
-              <Heart size={18} strokeWidth={1.5} />
-              {wishlistCount > 0 && (
-                <span className="absolute -top-1.5 -right-1.5 bg-[var(--color-gold)] text-[var(--color-bg-dark)] font-sans text-[9px] font-bold w-4 h-4 rounded-full flex items-center justify-center">
-                  {wishlistCount}
-                </span>
-              )}
-            </Link>
+              <Link
+                to="/conservation/impact"
+                id="nav-link-conservation"
+                className="font-sans text-[0.75rem] tracking-[0.2em] text-[var(--color-text)] uppercase hover:text-[var(--color-gold)] transition-colors duration-300 relative py-2 group"
+              >
+                Conservation
+                <div className="absolute bottom-0 left-0 w-0 h-[1px] bg-[var(--color-gold)] transition-all duration-300 group-hover:w-full"></div>
+              </Link>
 
-            <Link
-              to="/cart"
-              id="nav-cart-link"
-              aria-label="Shopping Cart"
-              className="text-[var(--color-text)] hover:text-[var(--color-gold)] transition-colors duration-300 relative"
-            >
-              <ShoppingBag size={18} strokeWidth={1.5} />
-              {cartCount > 0 && (
-                <span className="absolute -top-1.5 -right-1.5 bg-[var(--color-gold)] text-[var(--color-bg-dark)] font-sans text-[9px] font-bold w-4 h-4 rounded-full flex items-center justify-center">
-                  {cartCount}
-                </span>
-              )}
-            </Link>
+              <Link
+                to="/bespoke"
+                id="nav-link-bespoke"
+                className="font-sans text-[0.75rem] tracking-[0.2em] text-[var(--color-text)] uppercase hover:text-[var(--color-gold)] transition-colors duration-300 relative py-2 group"
+              >
+                Bespoke
+                <div className="absolute bottom-0 left-0 w-0 h-[1px] bg-[var(--color-gold)] transition-all duration-300 group-hover:w-full"></div>
+              </Link>
 
-            <Link
-              to="/account"
-              id="nav-account-link"
-              aria-label="My Account"
-              className="text-[var(--color-text)] hover:text-[var(--color-gold)] transition-colors duration-300"
-            >
-              <User size={18} strokeWidth={1.5} />
-            </Link>
+              <Link
+                to="/the-house/story"
+                id="nav-link-house"
+                className="font-sans text-[0.75rem] tracking-[0.2em] text-[var(--color-text)] uppercase hover:text-[var(--color-gold)] transition-colors duration-300 relative py-2 group"
+              >
+                The House
+                <div className="absolute bottom-0 left-0 w-0 h-[1px] bg-[var(--color-gold)] transition-all duration-300 group-hover:w-full"></div>
+              </Link>
+            </div>
+
+            {/* RIGHT: Quick Icons */}
+            <div className="flex items-center space-x-5 md:space-x-6 ml-auto lg:ml-0">
+              <button
+                id="nav-search-btn"
+                aria-label="Open Search"
+                onClick={() => setSearchActive(true)}
+                className="text-[var(--color-text)] hover:text-[var(--color-gold)] transition-colors duration-300"
+              >
+                <Search size={18} strokeWidth={1.5} />
+              </button>
+
+              <Link
+                to="/wishlist"
+                id="nav-wishlist-link"
+                aria-label="Wishlist"
+                className="text-[var(--color-text)] hover:text-[var(--color-gold)] transition-colors duration-300 relative"
+              >
+                <Heart size={18} strokeWidth={1.5} />
+                {wishlistCount > 0 && (
+                  <span className="absolute -top-1.5 -right-1.5 bg-[var(--color-gold)] text-[var(--color-bg-dark)] font-sans text-[9px] font-bold w-4 h-4 rounded-full flex items-center justify-center">
+                    {wishlistCount}
+                  </span>
+                )}
+              </Link>
+
+              <Link
+                to="/cart"
+                id="nav-cart-link"
+                aria-label="Shopping Cart"
+                className="text-[var(--color-text)] hover:text-[var(--color-gold)] transition-colors duration-300 relative"
+              >
+                <ShoppingBag size={18} strokeWidth={1.5} />
+                {cartCount > 0 && (
+                  <span className="absolute -top-1.5 -right-1.5 bg-[var(--color-gold)] text-[var(--color-bg-dark)] font-sans text-[9px] font-bold w-4 h-4 rounded-full flex items-center justify-center">
+                    {cartCount}
+                  </span>
+                )}
+              </Link>
+
+              <Link
+                to="/account"
+                id="nav-account-link"
+                aria-label="My Account"
+                className="text-[var(--color-text)] hover:text-[var(--color-gold)] transition-colors duration-300"
+              >
+                <User size={18} strokeWidth={1.5} />
+              </Link>
+            </div>
           </div>
         </div>
 
@@ -291,7 +293,7 @@ export const Navigation: React.FC = () => {
                 <div className="col-span-1 border-l border-[var(--color-gold)]/10 pl-8 flex flex-col justify-between">
                   <div>
                     <span className="font-sans text-[0.65rem] tracking-[0.2em] text-[var(--color-gold)] uppercase block mb-4 border-b border-[var(--color-gold)]/10 pb-2">
-                      The Wildcraft Vow
+                      The Hiranya Vow
                     </span>
                     <p className="font-serif text-sm italic text-[var(--color-text)] leading-relaxed mb-4">
                       \"Fine Jewelry should not exist at the cost of the Earth. We stand as a shield for those without a voice.\"
@@ -347,7 +349,7 @@ export const Navigation: React.FC = () => {
                 className="w-full bg-transparent border-b border-[var(--color-gold)] text-[var(--color-text)] font-serif text-3xl md:text-4xl text-center pb-3 focus:outline-none focus:border-[var(--color-gold-light)] placeholder-[var(--color-text-muted)]/30"
               />
               <p className="font-sans text-[0.65rem] tracking-[0.1em] text-[var(--color-text-muted)] uppercase mt-4">
-                Press enter to view matching pieces and journals
+                Press enter to view matching pieces
               </p>
             </form>
           </motion.div>
@@ -368,7 +370,7 @@ export const Navigation: React.FC = () => {
             {/* Header part */}
             <div className="flex items-center justify-between">
               <span className="font-serif text-xl tracking-[0.2em] text-[var(--color-text)] uppercase font-light">
-                WILDCRAFT
+                HIRANYA
               </span>
               <button
                 id="close-mobile-menu"
@@ -386,7 +388,6 @@ export const Navigation: React.FC = () => {
                 { title: "Conservation", path: "/conservation/impact" },
                 { title: "Bespoke Journey", path: "/bespoke" },
                 { title: "The House", path: "/the-house/story" },
-                { title: "The Journal", path: "/journal" },
               ].map((item, index) => (
                 <motion.div
                   key={index}

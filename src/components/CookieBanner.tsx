@@ -10,7 +10,7 @@ export const CookieBanner: React.FC = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const consent = localStorage.getItem("wildcraft_cookie_consent");
+    const consent = localStorage.getItem("hiranya_cookie_consent");
     if (!consent) {
       // Show after 1.5 seconds
       const timer = setTimeout(() => setVisible(true), 1500);
@@ -19,12 +19,12 @@ export const CookieBanner: React.FC = () => {
   }, []);
 
   const handleAccept = () => {
-    localStorage.setItem("wildcraft_cookie_consent", "accepted");
+    localStorage.setItem("hiranya_cookie_consent", "accepted");
     setVisible(false);
   };
 
   const handleManage = () => {
-    localStorage.setItem("wildcraft_cookie_consent", "managed");
+    localStorage.setItem("hiranya_cookie_consent", "managed");
     setVisible(false);
   };
 

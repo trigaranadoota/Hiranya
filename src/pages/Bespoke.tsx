@@ -15,7 +15,7 @@ interface FAQItem {
 }
 
 const faqs: FAQItem[] = [
-  { q: "What is the typical timeframe for a Bespoke Wildcraft commission?", a: "Each commission undergoes deep, iterative craftsmanship. From first raw digital layouts and color matching to master stone-setting and final hallmarks, the process takes approximately 8 to 12 weeks." },
+  { q: "What is the typical timeframe for a Bespoke Hiranya commission?", a: "Each commission undergoes deep, iterative craftsmanship. From first raw digital layouts and color matching to master stone-setting and final hallmarks, the process takes approximately 8 to 12 weeks." },
   { q: "Can I supply my own gemstones or heirloom jewelry for remodeling?", a: "In alignment with our strict Stewardship pledge, we only embed ethically certified, conflict-free gemstones with direct origin tracking, or source fully recycled circular metals. We are happy to evaluate family archives on a case-by-case basis." },
   { q: "How is the conservation funding portion decided for bespoke pieces?", a: "Precisely like our core Collections, 10% of the entire commission value of your custom commission is directly allocated to the endangered wildlife conservation partner of your choice, in alignment with your personal animal guardian." },
   { q: "Is international insured shipping included?", a: "Yes. All bespoke deliveries undergo secure, custom armored-courier dispatch with full insurance coverage, globally, at no extra cost to the patron." }
@@ -70,7 +70,7 @@ export const Bespoke: React.FC = () => {
     <div className="pt-20 bg-[var(--color-bg-primary)]">
       <SEO
         title={enquiryMode ? "BESPOKE ENQUIRY" : "A PIECE MADE ONLY FOR YOU"}
-        description="Sculpt a personalized fine jewelry masterpiece with Wildcraft's Geneva artisans. Every bespoke request funds global animal habitat restoration."
+        description="Sculpt a personalized fine jewelry masterpiece with Hiranya's Geneva artisans. Every bespoke request funds global animal habitat restoration."
       />
 
       <AnimatePresence mode="wait">
@@ -438,7 +438,7 @@ export const Bespoke: React.FC = () => {
 
                       {/* How did you hear about us */}
                       <div className="space-y-2 flex flex-col">
-                        <label className="font-sans text-[9px] tracking-[0.15em] text-[var(--color-text-muted)] uppercase" htmlFor="form-source">Where did you discover Wildcraft?</label>
+                        <label className="font-sans text-[9px] tracking-[0.15em] text-[var(--color-text-muted)] uppercase" htmlFor="form-source">Where did you discover Hiranya?</label>
                         <select
                           id="form-source"
                           name="source"

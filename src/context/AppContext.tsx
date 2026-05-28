@@ -25,21 +25,21 @@ const AppContext = createContext<AppContextType | undefined>(undefined);
 
 export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [cart, setCart] = useState<CartItem[]>(() => {
-    const saved = localStorage.getItem("wildcraft_cart");
+    const saved = localStorage.getItem("hiranya_cart");
     return saved ? JSON.parse(saved) : [];
   });
 
   const [wishlist, setWishlist] = useState<string[]>(() => {
-    const saved = localStorage.getItem("wildcraft_wishlist");
+    const saved = localStorage.getItem("hiranya_wishlist");
     return saved ? JSON.parse(saved) : [];
   });
 
   useEffect(() => {
-    localStorage.setItem("wildcraft_cart", JSON.stringify(cart));
+    localStorage.setItem("hiranya_cart", JSON.stringify(cart));
   }, [cart]);
 
   useEffect(() => {
-    localStorage.setItem("wildcraft_wishlist", JSON.stringify(wishlist));
+    localStorage.setItem("hiranya_wishlist", JSON.stringify(wishlist));
   }, [wishlist]);
 
   const addToCart = (productId: string, metal: string, size: string, qty = 1) => {

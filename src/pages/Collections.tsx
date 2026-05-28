@@ -67,7 +67,7 @@ export const Collections: React.FC = () => {
     <div className="pt-24 min-h-screen bg-[var(--color-bg-primary)]">
       <SEO
         title="THE JEWELRY COLLECTIONS"
-        description="Browse Wildcraft's luxury fine rings, necklaces, cuffs, and earrings. Every meticulously sculpted piece funds crucial habitat restoration."
+        description="Browse Hiranya's luxury fine rings, necklaces, cuffs, and earrings. Every meticulously sculpted piece funds crucial habitat restoration."
       />
 
       {/* Hero Banner */}

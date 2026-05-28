@@ -19,7 +19,6 @@ import { ProductDetail } from "./pages/ProductDetail";
 import { ConservationImpact } from "./pages/ConservationImpact";
 import { Bespoke } from "./pages/Bespoke";
 import { HouseStory } from "./pages/HouseStory";
-import { Journal } from "./pages/Journal";
 import { Cart } from "./pages/Cart";
 import { Checkout } from "./pages/Checkout";
 import { Account } from "./pages/Account";
@@ -69,9 +68,6 @@ export default function App() {
               <Route path="/the-house/story" element={<HouseStory />} />
               <Route path="/the-house/craftspeople" element={<HouseStory />} />
 
-              {/* Journal */}
-              <Route path="/journal" element={<Journal />} />
-              <Route path="/journal/:slug" element={<Journal />} />
 
               {/* Cart, Checkout, Wishlist, Account, Search, Contact */}
               <Route path="/cart" element={<Cart />} />

@@ -30,7 +30,7 @@ export const Footer: React.FC = () => {
           {/* Col 1: Brand & Logo */}
           <div className="flex flex-col space-y-6">
             <h3 className="font-serif text-2.5xl tracking-[0.2em] uppercase text-[var(--color-text)]">
-              WILDCRAFT
+              HIRANYA
             </h3>
             <p className="font-serif text-[1rem] italic text-[var(--color-text-muted)] leading-relaxed">
               \"A percentage of every fine jewelry sale is directly allocated to fund elite ranger patrol forces and restore crucial animal habitats worldwide.\"
@@ -79,7 +79,7 @@ export const Footer: React.FC = () => {
           {/* Col 2: Care & Service */}
           <div className="flex flex-col space-y-4">
             <span className="font-sans text-[0.7rem] uppercase tracking-[0.2em] text-[var(--color-gold)] font-medium">
-              Wildcraft Care
+              Hiranya Care
             </span>
             <ul className="space-y-2 text-sm text-[var(--color-text-muted)]">
               <li>
@@ -193,7 +193,7 @@ export const Footer: React.FC = () => {
           </div>
 
           <div className="font-sans text-[11px] text-[var(--color-text-muted)] text-center">
-            &copy; {new Date().getFullYear()} WILDCRAFT SA. All rights reserved.
+            &copy; {new Date().getFullYear()} HIRANYA SA. All rights reserved.
           </div>
 
           <div className="flex space-x-4 text-[11px] text-[var(--color-text-muted)]">

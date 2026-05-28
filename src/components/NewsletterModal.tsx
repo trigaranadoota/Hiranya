@@ -13,11 +13,11 @@ export const NewsletterModal: React.FC = () => {
   const [subscribed, setSubscribed] = useState(false);
 
   useEffect(() => {
-    const hasSeen = localStorage.getItem("wildcraft_has_seen_newsletter");
+    const hasSeen = localStorage.getItem("hiranya_has_seen_newsletter");
     if (!hasSeen) {
       const timer = setTimeout(() => {
         setIsOpen(true);
-        localStorage.setItem("wildcraft_has_seen_newsletter", "true");
+        localStorage.setItem("hiranya_has_seen_newsletter", "true");
       }, 8000); // 8 seconds after first visit as requested!
       return () => clearTimeout(timer);
     }

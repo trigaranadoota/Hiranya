@@ -38,7 +38,7 @@ export const Search: React.FC = () => {
 
   return (
     <div className="pt-24 min-h-screen bg-[var(--color-bg-primary)] text-left">
-      <SEO title="CATALOG DISCOVERY" description="Query Wildcraft's Geneva deep inventory for custom rings, necklaces, and wildlife-aligned bracelets." />
+      <SEO title="CATALOG DISCOVERY" description="Query HIRANYA's Geneva deep inventory for custom rings, necklaces, and wildlife-aligned bracelets." />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-12">
         
